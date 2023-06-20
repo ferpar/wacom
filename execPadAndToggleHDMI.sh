@@ -6,7 +6,8 @@ if [ $# -gt $threshold ]; then
   xsetwacom set $1 Button 2 "pan"
   xsetwacom set $1 Button 3 "modetoggle"
   xsetwacom set $1 PanScrollThreshold 50
-  xsetwacom set $1 MapToOutput HDMI-1
+# xsetwacom set $1 MapToOutput HDMI-1
+  xsetwacom set $1 MapToOutput "3840x2160+2560+0"
   xsetwacom set $1 Rotate none
 else
   echo "please specify the device number of the stylus as a parameter"
